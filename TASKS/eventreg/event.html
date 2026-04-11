@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body bgcolor="#FFE4E1" align="center">
+ 
+<center>
+    <h1>Event Registration Form</h1>
+    <p>Please fill in the details to register for the event.</p>
+    <form>
+        <table align="center" border="0" cellpadding="10" cellspacing="10">
+        <tr>
+            <td align="center">Register Here</td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Enter Name"></td>
+        </tr>
+        <tr>
+            <td><input type="number" placeholder="Enter Mobile"></td>
+        </tr>
+        <tr>
+            <td><input type="email" placeholder="Enter Email"></td>
+        </tr>
+        <tr>
+            <td><input type="password" placeholder="Enter Password"></td>
+        </tr>
+        <tr>
+            <td><input type="password" placeholder="Confirm Password"></td>
+        </tr>
+        
+        <tr>
+            <td>
+                <select name="State" >
+                    <option value="Select">Select State</option>
+                    <option value="Delhi">New Delhi</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Tamilnadu">Tamilnadu</option>
+                    <option value="Goa">Goa</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select name="District" placeholder="Select District">
+                    <option value="Select">Select District</option>
+                    <option value="Thrissur">Thrissur</option>
+                    <option value="Kannur">Kannur</option>
+                    <option value="Kollam">Kollam</option>
+                    <option value="Ernakulam">Ernakulam</option>
+                    <option value="Wayanad">Wayanad</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                 <input type="file" name="photo" accept="image/*" >
+            </td>
+        </tr>
+        <tr>
+            <td><label>Is this your first time participating?</label</td>
+            <td>
+                <input type="radio" id="first_time_yes" name="first_time" value="Yes" required><label for="first_time_yes">Yes</label>
+                <input type="radio" id="first_time_no" name="first_time" value="No"><label for="first_time_yes">No</label>
+            </td>
+        </tr>
+    
+        <tr>
+            <td><label>Known Languages</label</td>
+            <td>
+                <input type="checkbox" id="Eng" name="language" value="Eng" ><label for="Eng">English</label>
+                <input type="checkbox" id="Hin" name="language" value="Hin" ><label for="Hin">Hindi</label>
+                <input type="checkbox" id="Mal" name="language" value="Mal" ><label for="Mal">Malayalam</label>
+                <input type="checkbox" id="Tam" name="language" value="Tam" ><label for="Tam">Tamil</label>
+                <input type="checkbox" id="Arb" name="language" value="Arb" ><label for="Arb">Arabic</label>
+            </td>
+        </tr>
+        
+        <tr>
+            <td><input type="submit" value="Register"></td>
+        </tr>
+        <tr>
+            <td><a href="login.html">Login Here</a></td>
+        </tr>
+        </table>       
+    </form>
+</center>
+
+</body>
+</html>

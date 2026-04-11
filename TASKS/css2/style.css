@@ -1,0 +1,144 @@
+body,div,h1,p{
+    margin:0;
+    padding:0;
+}
+.container{
+    width:100%;
+    height:1200px;
+    background-color: black;
+
+}
+.container .header{
+    width:100%;
+    height:150px;
+    background-color: beige;
+}
+.container .header h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    padding-top: 20px;
+}
+.container .header p{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+
+}
+.container .menu{
+    width:100%;
+    height:60px;
+}
+.container .menu ul{
+    list-style-type: none;
+    float: right;
+    margin-right: 100px;
+}
+.container .menu ul li{
+    display:inline;
+    margin:10px;
+    padding: 10px;
+}
+.container .menu ul li a{
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 1.2em;
+}
+.container .menu ul li a:hover{
+    color: brown;
+}
+.container .hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-image: url("./images/hero.jpg.jpeg");
+}
+
+/* Blur only background */
+.container .hero::before {
+    content: "";
+    position: absolute;
+    inset:0;
+    background: url("./images/hero.jpg.jpeg") center/cover no-repeat;
+
+    filter: blur(2px);
+    transform:scale(1.1);
+    z-index: 0;
+}
+
+/* Hero content stays sharp */
+.container .hero .heroContent {
+    background-color: rgb(185, 220, 192);
+    width:50%;
+    height:120px;
+    margin:100px;
+    position: relative;
+    border-radius: 45px ;
+    z-index: 1;
+}
+/*.container .hero{
+    width:100%;
+    height:80vh;
+    background-color: beige;
+    background-image: url("./images/hero.jpg.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    /* opacity: 0.2; 
+}
+.container .hero .heroContent{
+    background-color: black;
+    width:50%;
+    height:120px;
+    margin:100px;
+    opacity: 0.8;
+    position: absolute;
+    border-radius: 45px ;
+}*/
+.container .hero .heroContent h1{
+    color:white;
+    text-align: center;
+    margin-top: 80px;
+    font-family: "Roboto", sans-serif;
+}
+.container .about{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width:100%;
+    height:30vh;
+    background-color: rgb(193, 193, 171);
+    font-family: "Roboto", sans-serif;
+    color: rgb(121, 7, 7);
+    font-size: 1.2em;
+    
+}
+
+.container .contact{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width:100%;
+    height:70vh;
+    background-color: rgb(184, 184, 24);
+    font-family: "Roboto", sans-serif;
+    color: rgb(7, 7, 107);
+    font-size: 1.2em;
+    
+}
+.container .hero .heroContent h1{
+    margin: 0 0 15px 15px; 
+}
+.about h2,
+.contact h2 {
+    /*margin: top right bottom left*/
+    margin: 0 0 15px 15px; 
+}
+.about p,
+.contact p {
+    margin: 15px 0 15px 15px; 
+}
+.contact form{
+    margin: 0 0 15px 15px; 
+}
